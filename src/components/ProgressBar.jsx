@@ -24,7 +24,7 @@ const ProgressBar = () => {
 
   return (
     isVisible && ( // Conditionally render
-      <div className="fixed top-0 left-0 w-full h-2 bg-gray-300 z-50">
+      <div className="fixed top-0 left-0 w-full h-2 bg-brand-dark-blue-tertiary z-50">
         <div
           className="h-full bg-brand-green transition-all duration-100 ease-out"
           style={{ width: `${scrollProgress}%` }}
