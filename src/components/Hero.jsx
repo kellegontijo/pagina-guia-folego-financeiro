@@ -70,7 +70,7 @@ const Hero = () => {
                 repeat: Infinity,
               }}
             >
-              <a href="#sales-box" onClick={() => scrollToSection('sales-box')} className="inline-flex items-center gap-x-3 bg-brand-green text-white font-montserrat font-semibold py-3 px-8 text-lg rounded-lg hover:bg-brand-guide-blue transition-colors duration-300 shadow-lg md:py-7 md:px-14 md:text-2xl lg:py-6 lg:px-12 lg:text-xl">
+              <a href="#sales-box" className="inline-flex items-center gap-x-3 bg-brand-green text-white font-montserrat font-semibold py-3 px-8 text-lg rounded-lg hover:bg-brand-guide-blue transition-colors duration-300 shadow-lg md:py-7 md:px-14 md:text-2xl lg:py-6 lg:px-12 lg:text-xl">
                 <span>Garanta Seu Guia + Diagnóstico</span>
                 <FaArrowRight />
               </a>
@@ -86,7 +86,7 @@ const Hero = () => {
           animate={{ y: [0, -5, 0] }} // Subtle vertical float
           transition={{ duration: 4, ease: "easeInOut", repeat: Infinity }}
         >
-          <img src={GuiaImg} alt="Capa do Guia Fôlego Financeiro" className="w-[300px] h-[400px] rounded-lg" />
+          <img src={GuiaImg} alt="Capa do Guia Fôlego Financeiro" width="300" height="400" className="w-[300px] h-[400px] rounded-lg" fetchpriority="high" />
         </motion.div>
       </div>
     </section>

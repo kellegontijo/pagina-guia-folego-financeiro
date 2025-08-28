@@ -81,7 +81,7 @@ const Hero = () => {
           animate={{ y: [0, -5, 0] }} // Subtle vertical float
           transition={{ duration: 4, ease: "easeInOut", repeat: Infinity }}
         >
-          <img src={GuiaImg} alt="Capa do Guia Fôlego Financeiro" className="w-[300px] h-[400px] rounded-lg" />
+          <img src={GuiaImg} alt="Capa do Guia Fôlego Financeiro" width="300" height="400" className="w-[300px] h-[400px] rounded-lg" fetchpriority="high" />
         </motion.div>
       </div>
     </section>

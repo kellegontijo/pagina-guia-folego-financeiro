@@ -1,45 +1,47 @@
-import AuthorImg from "../assets/kelle-gontijo.jpg";
-import { motion } from "framer-motion"; // Added import
-import { FaArrowRight } from "react-icons/fa"; // Added import
+import AuthorImg from "../assets/kelle-gontijo.webp";
+import { motion } from "framer-motion";
+import { FaArrowRight } from "react-icons/fa";
 
-const Author = () => {
+const Author = ({ scrollToSection }) => {
   return (
-    <section className="container mx-auto flex flex-col lg:flex-row items-center justify-center py-20 px-6 md:px-12 gap-x-8 gap-y-8">
-      <div className="w-auto flex justify-center mb-8">
-        <img src={AuthorImg} alt="Kelle Gontijo" className="max-w-xs md:max-w-md shadow-xl border-2 border-brand-green" />
-      </div>
-      <div className="w-full md:w-2/3 text-center max-w-xl mx-auto">
-        <h2 className="font-montserrat text-3xl font-bold text-brand-black mb-2">
-          Quem é Kelle Gontijo?
-        </h2>
-        <p className="font-montserrat text-lg text-brand-gray mb-4">
-          Mentora Financeira. Ex-Endividada. Sua Guia para a Liberdade.
-        </p>
-        <p className="font-montserrat text-base text-brand-gray mb-4">
-          De uma vida confortável a R$200 mil em dívidas, perdendo o básico mesmo morando em uma 'casa de milhões'. Essa foi a jornada de Kelle Gontijo. Ela não só superou o caos financeiro, mas transformou sua experiência em um método que já ajudou centenas a reconquistar a dignidade e a liberdade.
-        </p>
-        <p className="font-montserrat text-base text-brand-gray mb-4">
-          Kelle é a prova viva de que a riqueza não está no salário, mas no **método** e na **atitude**. Hoje, ela compartilha o caminho que a salvou, para que você também possa construir uma vida financeira próspera e com propósito.
-        </p>
-        <p className="font-montserrat text-lg text-brand-black italic mt-6">
-          "A riqueza não tem nada a ver com dinheiro. Ela está na sua mente, nos seus comportamentos."
-        </p>
-        <motion.div
-          className="self-center mt-8" // Added mt-8 for spacing
-          animate={{
-            scale: [1, 1.03, 1],
-          }}
-          transition={{
-            duration: 2.5,
-            ease: "easeInOut",
-            repeat: Infinity,
-          }}
-        >
-          <a href="#sales-box" onClick={() => scrollToSection('sales-box')} className="inline-flex items-center gap-x-3 bg-brand-dark-blue-alt text-white font-montserrat font-semibold py-3 px-8 text-lg rounded-lg hover:bg-brand-guide-blue transition-colors duration-300 shadow-lg md:py-7 md:px-14 md:text-2xl lg:py-6 lg:px-12 lg:text-xl">
-            <span>Garanta Seu Guia + Diagnóstico</span>
-            <FaArrowRight />
-          </a>
-        </motion.div>
+    <section className="bg-white py-20 px-6 md:px-12">
+      <div className="container mx-auto max-w-5xl flex flex-col md:flex-row items-center justify-center gap-x-4 pl-12 pr-4">
+        <div className="md:w-1/2 flex justify-center mb-8">
+          <img src={AuthorImg} alt="Kelle Gontijo" width="316" height="398" className="w-full h-full object-cover max-w-xs md:max-w-sm lg:max-w-md shadow-xl border-2 border-brand-green" />
+        </div>
+        <div className="md:w-1/2 text-left">
+          <h2 className="font-serif text-4xl font-bold text-brand-black mb-4">
+            Quem é Kelle Gontijo?
+          </h2>
+          <p className="font-montserrat text-lg text-brand-gray mb-6">
+            Mentora Financeira. Ex-Endividada. Sua Guia para a Liberdade.
+          </p>
+          <p className="font-montserrat text-base text-brand-gray mb-4">
+            De R$200 mil em dívidas à liberdade, Kelle Gontijo transformou sua experiência em um método que já ajudou centenas.
+          </p>
+          <p className="font-montserrat text-base text-brand-gray mb-4">
+            Ela prova que a riqueza está no <span className="font-bold">método</span> e na <span className="font-bold">atitude</span>, e compartilha o caminho para sua vida próspera.
+          </p>
+          <p className="font-montserrat text-lg text-brand-black italic mt-6">
+            "A riqueza não tem nada a ver com dinheiro. Ela está na sua mente, nos seus comportamentos."
+          </p>
+          <motion.div
+            className="self-start mt-8" // Adjusted for left alignment
+            animate={{
+              scale: [1, 1.03, 1],
+            }}
+            transition={{
+              duration: 2.5,
+              ease: "easeInOut",
+              repeat: Infinity,
+            }}
+          >
+            <a href="#sales-box" className="inline-flex items-center gap-x-3 bg-brand-green text-white font-montserrat font-semibold py-3 px-8 text-lg rounded-lg hover:bg-brand-guide-blue transition-colors duration-300 shadow-lg md:py-7 md:px-14 md:text-2xl lg:py-6 lg:px-12 lg:text-xl">
+              <span>Garanta Seu Guia + Diagnóstico</span>
+              <FaArrowRight />
+            </a>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
