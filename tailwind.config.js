@@ -17,6 +17,7 @@ export default {
         'brand-dark-blue-alt': '#24465F',
         'brand-gold': '#DCC47A',
         'brand-yellow': '#f9f902',
+        'brand-dark-blue-tertiary': '#22445D',
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],

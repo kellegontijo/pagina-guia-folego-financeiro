@@ -45,7 +45,7 @@ const Hero = () => {
               </motion.span>
             ))}
           </motion.h1>
-          <p className="text-xl font-montserrat text-white mt-[-2]">
+          <p className="text-xl font-montserrat text-brand-dark-blue-tertiary mt-[-2]">
             Como sair da escravidão financeira, pagar suas dívidas pelo valor justo e conquistar a liberdade que você merece.
           </p>
           
