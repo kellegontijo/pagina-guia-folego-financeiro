@@ -50,9 +50,9 @@ const Hero = () => {
           </p>
           
           
-          <p className="font-montserrat text-4xl text-white text-center lg:text-left">
+          <p className="font-montserrat text-4xl text-white text-center lg:text-left leading-tight">
             <span className="line-through">De R$29,90</span> por <span className="font-extrabold">R$9,90</span> <br />
-            <span className="text-xl">a vista ou em 2x de R$5,21</span>
+            <span className="text-3xl">a vista ou em 2x de R$5,21</span>
           </p>
 
           <div className="self-center lg:self-start">
