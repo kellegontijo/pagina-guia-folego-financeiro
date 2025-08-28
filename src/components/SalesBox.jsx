@@ -30,7 +30,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="sales-box" className="bg-brand-green container mx-auto flex flex-col lg:flex-row items-center justify-center gap-x-12 min-h-screen px-6 py-12">
+    <section id="sales-box" className="bg-brand-green flex flex-col lg:flex-row items-center justify-center gap-x-12 min-h-screen px-6 py-12">
       <div className="lg:w-2/5 flex flex-col items-center lg:items-start text-center lg:text-left mb-10 lg:mb-0 order-last lg:order-none mt-6">
         <div className="flex flex-col gap-y-6">
           <motion.h1
