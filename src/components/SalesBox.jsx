@@ -51,7 +51,7 @@ const Hero = () => {
           
           
           <p className="font-montserrat mb-2 text-4xl text-white">
-            <span className="line-through">De R$49,90</span> por <span className="font-extrabold">R$27,90</span>
+            <span className="line-through">De R$29,90</span> por <span className="font-extrabold">R$9,90</span>
           </p>
 
           <div className="self-center lg:self-start">
@@ -71,7 +71,7 @@ const Hero = () => {
               </a>
             </motion.div>
             <p className="mt-2 text-brand-gray text-center text-base">
-              <span className="line-through">De R$49,90</span> por apenas <span>R$27,90</span>
+              <span className="line-through">De R$29,90</span> por apenas <span>R$9,90</span>
             </p>
           </div>
         </div>

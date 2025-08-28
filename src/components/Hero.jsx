@@ -76,7 +76,7 @@ const Hero = () => {
               </a>
             </motion.div>
             <p className="mt-2 text-brand-dark-blue-alt text-center text-base">
-              <span className="font-bold line-through">De R$49,90</span> por apenas <span className="font-bold text-brand-dark-blue-alt">R$27,90</span>
+              <span className="font-bold line-through">De R$29,90</span> por apenas <span className="font-bold text-brand-dark-blue-alt">R$9,90</span>
             </p>
           </div>
         </div>
